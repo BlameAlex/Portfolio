@@ -1,0 +1,21 @@
+.nav {
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 20%;
+  font-size: 20px;
+}
+
+
+.body {
+  background-color: rgb(17, 17, 17);
+  font: sans-serif;
+  color: white;
+}
+
+.section-pic {
+  width: 15%;
+  height: auto;
+  border-radius: 8px;
+}
