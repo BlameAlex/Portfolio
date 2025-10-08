@@ -3,32 +3,33 @@
   <link rel="stylesheet" href="styles.css" />
   <head>
     <title>Blame Alex's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="https://images.pexels.com/photos/1806900/pexels-photo-1806900.jpeg">
+    <link rel="icon" type="image/x-icon" href="/src/imgs/BA_logo.png">
   </head>
   <body class="body">
 
     <header style="text-align: center;">
       <h1>Blame Alex</h1>
-      <p>All your problems are Alex's fault.</p>
     </header>
 
-    <nav class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="index.html">Sobre Mi</a>
-      <a href="index.html">Experiencia</a>
-      <a href="index.html">Contactame</a>
-    </nav>
-
-    <main>
-      <section style="padding: 1rem;">
-        <div style="display: flex;">
-          <img class="section-pic" src="https://images.pexels.com/photos/18160924/pexels-photo-18160924.jpeg" alt="Ups, aqui iba mi foto" >
-            <div style="padding-left: 2rem;">
-              <h2>Sobre Mi</h2>
-              <p>Hola, Soy Alex, un desarrollador web en progreso, alumno de la Universidad Tecnologica de Cancún</p>
-            </div>
-        </div>
+    <main class="main-content" style="position: relative; z-index: 1;">
+      <section style="display: flex;">
+        <figure class="vinyl" aria-hidden="true">
+          <img src="/src/imgs/BA_vinyl.png" alt="Cool Vinyl"/>
+        </figure>   
       </section>
     </main>
+
+    <script>
+      let rotation = 0;
+      const vinyl = document.querySelector(".vinyl img");
+
+      window.addEventListener("wheel", (e) => {
+        e.preventDefault(); // bloquea el scroll normal
+        rotation += e.deltaY * 0.08; // ajusta sensibilidad
+        vinyl.style.transform = `rotate(${rotation}deg)`;
+      }, { passive: false });
+    </script>
+
+
   </body>
 </html>
