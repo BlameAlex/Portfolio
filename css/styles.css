@@ -1,0 +1,17 @@
+.nav {
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.nav-pill {
+  text-decoration: none;
+  color: white;
+  font-family: JockeyOne;
+  transition: background-color 0.3s, color 0.3s;
+}
+

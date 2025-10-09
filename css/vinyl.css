@@ -1,0 +1,15 @@
+.vinyl {
+  position: fixed;
+  top: 50px;
+  left: -250px;
+  max-height: 750px;
+  rotate: 62deg;
+  overflow: hidden;
+}
+
+.vinyl img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: center center; /* ensures it rotates around the middle */
+}

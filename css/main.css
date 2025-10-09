@@ -1,0 +1,14 @@
+@import url("base.css"); /* Globals */
+@import url("layout.css"); /* Html structures */ 
+@import url("components.css"); /* Buttons, navs, etc */
+@import url("animations.css"); /* UNUSED*/
+@import url("vinyl.css"); /* Special */
+@import url("styles.css");
+
+/* Google Fonts - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Google Fonts - Jockey One */
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+

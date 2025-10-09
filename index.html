@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <head>
     <title>Blame Alex's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/src/imgs/BA_logo.png">
   </head>
   <body class="body">
 
-    <header style="text-align: center;">
-      <h1>Blame Alex</h1>
+    <header>
+      <div style="display: flex; flex-direction: row;">
+        <img src="/src/imgs/BA_logo.png" alt="Blame Alex Logo" style="max-height: 30px; max-width: 30px;"/>
+        <p style="padding-left: 0.5rem;">Blame Alex</p>
+      </div>
+      <button>Lets Talk</button>
     </header>
 
     <main class="main-content" style="position: relative; z-index: 1;">
@@ -25,7 +29,7 @@
 
       window.addEventListener("wheel", (e) => {
         e.preventDefault(); // bloquea el scroll normal
-        rotation += e.deltaY * 0.08; // ajusta sensibilidad
+        rotation += e.deltaY * -0.08; // ajusta sensibilidad
         vinyl.style.transform = `rotate(${rotation}deg)`;
       }, { passive: false });
     </script>
