@@ -17,7 +17,90 @@ header * {
 }
 
 body {
-  background-color: rgb(17, 17, 17);
+  background-color: #111111;
   font: sans-serif;
   color: white;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+}
+
+.carousel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.carousel ul {
+  list-style: none;
+  gap: 1rem;
+  margin: 0 0 0 25rem;
+  padding-inline: 10rem;
+  position: relative;
+  will-change: transform;
+}
+
+.carousel li {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  opacity: 0.25;
+  transition: opacity 0.25s, transform 0.25s;
+  width: 550px;
+  text-align: left;
+  position: relative;
+  transition: all 1s ease;
+}
+
+.carousel li.active {
+  opacity: 1;
+  transform: scale(1.15);
+  transition: all 1s ease;
+}
+
+.carousel li h1 {
+  font-family: Jockey One;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin: 0.2rem 0;
+  max-width: 70ch;
+}
+
+
+.carousel li p {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.carousel li a {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.carousel li a:hover {
+  opacity: 0.5;
+}
+
+.carousel li p a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding-inline: 5px;
+  font-size: 35px;
+  transition: font-size 0.3s;
+}
+
+.carousel li p a:hover {
+  font-size: 45px;
 }

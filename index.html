@@ -1,39 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
   <link rel="stylesheet" href="css/main.css" />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+  />
   <head>
     <title>Blame Alex's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/src/imgs/BA_logo.png">
+    <link rel="icon" type="image/x-icon" href="/src/imgs/BA_logo.png" />
   </head>
   <body class="body">
-
     <header>
-      <div style="display: flex; flex-direction: row;">
-        <img src="/src/imgs/BA_logo.png" alt="Blame Alex Logo" style="max-height: 30px; max-width: 30px;"/>
-        <p style="padding-left: 0.5rem;">Blame Alex</p>
+      <div style="display: flex; flex-direction: row">
+        <img
+          src="/src/imgs/BA_logo.png"
+          alt="Blame Alex Logo"
+          style="max-height: 30px; max-width: 30px"
+        />
+        <p style="padding-left: 0.5rem">Blame Alex</p>
       </div>
       <button>Lets Talk</button>
     </header>
+    <div class="container">
+      <figure class="vinyl" aria-hidden="true">
+        <img src="/src/imgs/BA_vinyl.png" alt="Cool Vinyl" />
+      </figure>
 
-    <main class="main-content" style="position: relative; z-index: 1;">
-      <section style="display: flex;">
-        <figure class="vinyl" aria-hidden="true">
-          <img src="/src/imgs/BA_vinyl.png" alt="Cool Vinyl"/>
-        </figure>   
-      </section>
-    </main>
+      
 
-    <script>
-      let rotation = 0;
-      const vinyl = document.querySelector(".vinyl img");
+      <main class="carousel">
+        <ul>
+          <li>
+            <h1>Hello World! Im Alex</h1>
+            <p>Desarrollador Web en formación</p>
+            <p>
+              Actualmente estudiante de Ingeniería en Desarrollo de <br />
+              Software Multiplataforma, me especializo en desarrollar sitios y
+              aplicaciones web con HTML, CSS, JavaScript y C#
+            </p>
+            <div class="me-image" aria-hidden="true">
+              <img src="/src/imgs/Yo_editado.jpg" alt="El rostro de BlameAlex" />
+            </div>
+          </li>
+          <li>
+            <h1>Mi Trabajo</h1>
+            <p>
+              Actualmente estoy construyendo mi portfolio mientras<br />
+              desarrollo proyectos personales y académicos con tecnologías
+              modernas como ASP.NET Core, MySQL y React Native
+            </p>
+            <a>Conoce algunos de mis proyectos →</a>
+          </li>
+          <li>
+            <h1>Mi Stack</h1>
+            <p>
+              Frontend:
+              <i class="devicon-html5-plain colored"></i>
+              <i class="devicon-css3-plain colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-bootstrap-plain colored"></i>
+            </p>
+            <p>
+              Backend:
+              <i class="devicon-csharp-plain colored"></i>
+              <i class="devicon-dotnetcore-plain colored"></i>
+              <i class="devicon-python-plain colored"></i>
+            </p>
+            <p>
+              Data Base:
+              <i class="devicon-mysql-original colored"></i>
+              <i class="devicon-postgresql-plain colored"></i>
+              <i class="devicon-mongodb-plain colored"></i>
+            </p>
+            <p>
+              Otros:
+              <i class="devicon-git-plain colored"></i>
+            </p>
+          </li>
+          <li>
+            <h1>Contacto</h1>
+            <p style="font-size: 35px">
+              <a
+                href="https://www.linkedin.com/in/blamealex/"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i class="devicon-linkedin-plain colored"></i>
+              </a>
+              <a
+                href="https://github.com/BlameAlex"
+                target="_blank"
+                title="GitHub"
+              >
+                <i class="devicon-github-plain"></i>
+              </a>
+              <a
+                href="https://mail.google.com"
+                target="_blank"
+                title="Send Email"
+              >
+                <i class="ti ti-mail-filled" style="color: #c00f0f"></i>
+              </a>
+            </p>
+          </li>
+        </ul>
+      </main>
+    </div>
 
-      window.addEventListener("wheel", (e) => {
-        e.preventDefault(); // bloquea el scroll normal
-        rotation += e.deltaY * -0.08; // ajusta sensibilidad
-        vinyl.style.transform = `rotate(${rotation}deg)`;
-      }, { passive: false });
-    </script>
-
-
+    <script src="js/main.js"></script>
   </body>
 </html>

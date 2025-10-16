@@ -1,0 +1,36 @@
+.vinyl {
+  position: fixed;
+  top: 50px;
+  left: -250px;
+  max-height: 100vh;
+  rotate: 75deg;
+  overflow: hidden;
+}
+
+.vinyl img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform-origin: center center; /* ensures it rotates around the middle */
+}
+
+.me-image {
+  position: absolute;
+  top: -200px;
+  left: 300px;
+  rotate: -15deg;
+  width: 250px;
+  height: 300px;
+  z-index: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.me-image img {
+  width: 60%;
+  padding: 10px 10px 30px 10px;
+  background: #ffffff;
+  opacity: 0.9;
+  transition: opacity 0.6s ease, transform 1s ease;
+}

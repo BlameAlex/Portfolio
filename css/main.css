@@ -2,7 +2,7 @@
 @import url("layout.css"); /* Html structures */ 
 @import url("components.css"); /* Buttons, navs, etc */
 @import url("animations.css"); /* UNUSED*/
-@import url("vinyl.css"); /* Special */
+@import url("features.css"); /* Special */
 @import url("styles.css");
 
 /* Google Fonts - Lato */
